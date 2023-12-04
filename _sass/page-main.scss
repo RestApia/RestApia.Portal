@@ -1,0 +1,12 @@
+.page-main {
+    text-align: center;
+    height: 100%;
+
+    .demo-picture {
+        max-height: 80%;
+        max-width: 90%;
+
+        filter: drop-shadow(0px 18px 17.4px rgba(0, 0, 0, 0.75));
+        border-radius: 8px;
+    }
+}

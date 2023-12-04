@@ -1,0 +1,18 @@
+.layout-demo {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+
+    .demo-title {
+        font-size: 2em;
+        font-weight: 200;
+        margin: 50px 0;
+        text-transform: uppercase;
+    }
+
+    .demo-content {
+        flex-grow: 1;
+        width: 100%;
+    }
+}

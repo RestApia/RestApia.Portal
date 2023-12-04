@@ -1,0 +1,18 @@
+footer {
+    color: var(--app-fg-silent);
+    font-size: .8em;
+
+    .menu {
+        display: flex;
+        gap: 15px;
+
+        a {
+            color: var(--app-fg-silent);
+            text-decoration: none;
+
+            &:hover {
+                color: var(--app-fg-color);
+            }
+        }
+    }
+}
