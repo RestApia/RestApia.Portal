@@ -1,13 +1,18 @@
 .layout-content {
     max-width: calc(var(--app-max-width) + #{$contentMargin * 2});
     margin: 0 auto;
-    padding: 20px 20px;
     height: 100%;
 
-    article{
-        background: linear-gradient(180deg, #2e2a31e3, #2e2a31b5, transparent);
+    background: rgba(0, 0, 0, 0.15);
+    backdrop-filter: blur(5px);
+
+    // order: 2;
+    // flex-grow: 1;
+    // z-index: 2;
+
+    article {
+        // background: #1d1c23b5;
         padding: 30px;
-        border-radius: 15px;
         height: 100%;
     }
 }

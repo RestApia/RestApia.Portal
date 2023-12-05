@@ -30,47 +30,9 @@ body {
     }
 }
 
-header {
-    width: 100%;
-    max-width: calc(var(--app-max-width) + #{$contentMargin * 2});
-    display: flex;
-    justify-content: center;
-
-    .content {
-        background: #1b1a2278;
-        // background: gray;
-        border-radius: 0 0 15px 15px;
-        width: 100%;
-        margin: 0 $contentMargin;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 15px;
-    }
-}
-
 main {
     flex-grow: 1;
     width: 100%;
-}
-
-footer {
-    background: #0000005e;
-    width: 100%;
-    display: flex;
-    justify-content: center;
-
-    .content {
-        display: flex;
-        justify-content: space-between;
-        padding: 4px 0 5px;
-
-        max-width: calc(var(--app-max-width) + #{$contentMargin * 2});
-        margin: 0 $contentMargin;
-        width: 100%;
-        font-size: .9em;
-    }
 }
 
 @keyframes fadeInBodyBg {
@@ -79,6 +41,6 @@ footer {
     }
 
     to {
-        opacity: .75;
+        opacity: 1;
     }
 }
