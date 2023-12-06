@@ -25,7 +25,7 @@ body {
     }
 
     &.index::before {
-        background-image: url('#{$base-url}/assets/images/bg-1.jpg');        
+        background-image: url('#{$base-url}/assets/images/bg-1.jpg');
         animation: fadeInBodyBg 3s ease-in-out .5s forwards
     }
 }
@@ -33,6 +33,47 @@ body {
 main {
     flex-grow: 1;
     width: 100%;
+}
+
+a {
+    color: var(--app-fg-accent);
+    text-decoration: none;
+    border-bottom: solid 1px var(--app-bg-accent);
+
+    &:hover {
+        color: var(--app-bg-accent);
+    }
+}
+
+a.btn {
+    color: var(--app-fg-accent);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 8px 15px 8px 13px;
+    gap: 7px;
+
+    background: var(--app-bg-alt);
+
+    border: 1px solid var(--app-bg-accent);
+    box-shadow: 0px 4px 4px var(--app-shadow-accent);
+    border-radius: 5px;
+
+    &:hover {
+        color: var(--app-bg-accent);
+        background: var(--app-bg-color);
+    }
+
+    &.btn-disabled {
+        border-color: var(--app-fg-silent);
+        color: var(--app-fg-silent);
+        box-shadow: none;
+        pointer-events: none;
+    }
 }
 
 @keyframes fadeInBodyBg {

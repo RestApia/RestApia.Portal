@@ -1,0 +1,113 @@
+.page-plans {
+    color: #fff;
+
+    .title {
+        div {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        &>div:nth-child(1) {
+            font-size: 2em;
+            font-weight: 200;
+            text-transform: uppercase;
+        }
+
+        &>div:nth-child(2) {
+            line-height: 1.2em;
+        }
+    }
+
+    .note {
+        text-align: center;
+        color: var(--app-fg-color);
+
+        .content {
+            background: var(--app-bg-color);
+            padding: 10px 25px 12px 20px;
+            border-radius: 6px;
+            display: inline-flex;
+            align-items: center;
+            gap: 8px;
+        }
+
+        .ph-fill {
+            color: var(--app-bg-accent);
+        }
+    }
+
+    .plans {
+        display: flex;
+        justify-content: space-around;
+        margin: 50px 20px 60px;
+        gap: 5px;
+    }
+
+    .option {
+        background: var(--app-bg-color);
+        display: inline-flex;
+        flex-direction: column;
+        width: 350px;
+        height: 530px;
+        padding: 30px 40px 40px;
+
+        .highlight {
+            text-decoration: underline;
+        }
+
+        .title {
+            font-size: 2em;
+            margin-bottom: 15px;
+            text-transform: uppercase;
+        }
+
+        .description {
+            height: 80px;
+
+            .highlight {
+                color: var(--app-bg-accent);
+                text-decoration: none;
+            }
+        }
+
+        .price {
+            font-size: 5em;
+            line-height: 0em;
+            margin-top: .75em;
+            margin-bottom: .3em;
+
+            &::before {
+                content: "$";
+                font-size: .2em;
+                vertical-align: baseline;
+            }
+        }
+
+        ul.options {
+            padding: 0;
+            flex-grow: 1;
+
+            li {
+                list-style-type: none;
+                margin: 4px 0;
+                font-size: .95em;
+                padding-left: 25px;
+                position: relative;
+
+                &::before {
+                    content: '\ea30';
+                    font-family: "Phosphor-Bold" !important;
+                    display: inline-block;
+                    position: absolute;
+                    left: 0;
+                }
+            }
+        }
+
+        .button {
+            .ph-fill {
+                font-size: 1.65em;
+            }
+        }
+    }
+}
