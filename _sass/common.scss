@@ -21,7 +21,7 @@ body {
         background-position-y: bottom;
         opacity: 0;
 
-        animation: fadeInBodyBg 1.5s ease-in-out .25s forwards
+        animation: fadeInBodyBg 0.5s ease-in-out forwards
     }
 
     &.index::before {

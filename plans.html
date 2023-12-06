@@ -52,7 +52,7 @@ price_annual_k: .85
                 <li>We will extend this list later (;</li>
             </ul>
             <div class="button">
-                <a href="/downloads" class="btn btn-primary">
+                <a href="/not-ready" class="btn btn-primary">
                     <img src="/assets/images/ico-download.svg" alt="" />
                     Download
                 </a>
@@ -81,7 +81,7 @@ price_annual_k: .85
                 <li>Support via email</li>
             </ul>
             <div class="button">
-                <a href="#" class="btn btn-disabled">
+                <a href="/not-ready" class="btn btn-disabled">
                     <i class="ph-fill ph-prohibit-inset"></i>
                     Not yet available
                 </a>
@@ -108,7 +108,7 @@ price_annual_k: .85
                 <li>Priority support</li>
             </ul>
             <div class="button">
-                <a href="#" class="btn btn-disabled">
+                <a href="/not-ready" class="btn btn-disabled">
                     <i class="ph-fill ph-prohibit-inset"></i>
                     Not yet available
                 </a>
@@ -126,19 +126,21 @@ price_annual_k: .85
 </div>
 
 <script>
-    const period = document.querySelector('.payment-period');
-    const options = document.querySelectorAll('.option');
+    document.addEventListener("DOMContentLoaded", function () {
+        const period = document.querySelector('.payment-period');
+        const options = document.querySelectorAll('.option');
 
-    period.addEventListener('click', (e) => {
-        const target = e.target.dataset.target;
-        if (target) {
-            period.querySelector('.active').classList.remove('active');
-            e.target.classList.add('active');
+        period.addEventListener('click', (e) => {
+            const target = e.target.dataset.target;
+            if (target) {
+                period.querySelector('.active').classList.remove('active');
+                e.target.classList.add('active');
 
-            options.forEach(option => {
-                option.querySelector('.price.show').classList.remove('show');
-                option.querySelector(`.price.${target}`).classList.add('show');
-            });
-        }
+                options.forEach(option => {
+                    option.querySelector('.price.show').classList.remove('show');
+                    option.querySelector(`.price.${target}`).classList.add('show');
+                });
+            }
+        });
     });
 </script>
