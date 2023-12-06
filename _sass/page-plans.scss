@@ -99,26 +99,32 @@
 
         .price {
             font-size: 5em;
-            line-height: 0em;
-            margin-top: .75em;
-            margin-bottom: .3em;
+            height: 120px;
             display: flex;
             align-items: baseline;
+
+            &.not-available {
+                color: var(--app-fg-silent);
+                font-size: 4em;
+                line-height: 0.8em;
+            }
 
             &:not(.show) {
                 display: none;
             }
 
-            &::before {
-                content: "$";
-                font-size: .2em;
-                vertical-align: baseline;
-            }
+            &:not(.not-available) {
+                &::before {
+                    content: "$";
+                    font-size: .2em;
+                    vertical-align: baseline;
+                }
 
-            &::after {
-                content: "/ user";
-                font-size: .2em;
-                vertical-align: baseline;
+                &::after {
+                    content: "/ user";
+                    font-size: .2em;
+                    vertical-align: baseline;
+                }
             }
         }
 
