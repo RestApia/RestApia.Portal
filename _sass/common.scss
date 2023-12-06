@@ -6,60 +6,73 @@ body {
     flex-direction: column;
     align-items: center;
 
+    // background-image: url(/assets/images/bg-1.jpg);
+    // background-size: cover;
+    // background-position: center;
+
     &::before {
         content: '';
         position: fixed;
         z-index: -1;
         inset: 0;
-        background-image: url('#{$base-url}/assets/images/bg-1.jpg');
+        background-image: url('#{$base-url}/assets/images/bg-2.jpg');
         background-size: cover;
         background-position-x: center;
         background-position-y: bottom;
         opacity: 0;
 
-        animation: fadeInBodyBg 2s ease-in-out 1 forwards
+        animation: fadeInBodyBg 1.5s ease-in-out .25s forwards
     }
-}
 
-header {
-    width: 100%;
-    max-width: calc(var(--app-max-width) + #{$contentMargin * 2});
-    display: flex;
-    justify-content: center;
-
-    .content {
-        background: #1b1a2278;
-        // background: gray;
-        border-radius: 0 0 15px 15px;
-        width: 100%;
-        margin: 0 $contentMargin;
-
-        display: flex;
-        justify-content: space-between;
-        align-items: center;
-        padding: 10px 15px;
+    &.index::before {
+        background-image: url('#{$base-url}/assets/images/bg-1.jpg');
+        animation: fadeInBodyBg 3s ease-in-out .5s forwards
     }
 }
 
 main {
     flex-grow: 1;
+    width: 100%;
 }
 
-footer {
-    background: #0000005e;
-    width: 100%;
+a {
+    color: var(--app-fg-accent);
+    text-decoration: none;
+    border-bottom: solid 1px var(--app-bg-accent);
+
+    &:hover {
+        color: var(--app-bg-accent);
+    }
+}
+
+a.btn {
+    color: var(--app-fg-accent);
+    text-decoration: none;
+    text-transform: uppercase;
+    font-weight: 500;
+
     display: flex;
     justify-content: center;
+    align-items: center;
+    padding: 8px 15px 8px 13px;
+    gap: 7px;
 
-    .content {
-        display: flex;
-        justify-content: space-between;
-        padding: 4px 0 5px;
+    background: var(--app-bg-alt);
 
-        max-width: calc(var(--app-max-width) + #{$contentMargin * 2});
-        margin: 0 $contentMargin;
-        width: 100%;
-        font-size: .9em;
+    border: 1px solid var(--app-bg-accent);
+    box-shadow: 0px 4px 4px var(--app-shadow-accent);
+    border-radius: 5px;
+
+    &:hover {
+        color: var(--app-bg-accent);
+        background: var(--app-bg-color);
+    }
+
+    &.btn-disabled {
+        border-color: var(--app-fg-silent);
+        color: var(--app-fg-silent);
+        box-shadow: none;
+        pointer-events: none;
     }
 }
 
@@ -69,6 +82,6 @@ footer {
     }
 
     to {
-        opacity: .35;
+        opacity: 1;
     }
 }

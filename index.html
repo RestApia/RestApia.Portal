@@ -2,8 +2,27 @@
 layout: demo
 title: "RestApia - Desktop tool"
 demo_title: "Just Clean, Simple Code"
+bodyClass: index
 ---
 
 <div class="page-main">
-    <img src="{{ '/assets/content/demo/demo-01.jpg' | relative_url }}" alt="" class="demo-picture">
+    <div class="screenshots">
+        {% for image in site.static_files %}
+            {% if image.path contains '/assets/content/demo/' %}
+                <img src="{{ site.baseurl }}{{ image.path }}" alt="" class="demo-picture{% if forloop.first %} show{% endif %}">
+            {% endif %}
+        {% endfor %}
+    </div>
 </div>
+
+<script>
+    setInterval(function () {
+        var current = document.querySelector('.demo-picture.show');
+        var next = current.nextElementSibling;
+        if (next === null) {
+            next = document.querySelector('.demo-picture');
+        }
+        current.classList.remove('show');
+        next.classList.add('show');
+    }, 5000);
+</script>

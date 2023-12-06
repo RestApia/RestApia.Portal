@@ -3,9 +3,12 @@
 
 $base-url: "{{ site.baseurl }}";
 
+@import "reset";
 @import "base";
 @import "common";
 @import "header";
 @import "footer";
 @import "layout-demo";
+@import "layout-content";
 @import "page-main";
+@import "page-plans";
