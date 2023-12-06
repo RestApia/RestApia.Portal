@@ -15,7 +15,7 @@ body {
         position: fixed;
         z-index: -1;
         inset: 0;
-        background-image: url('/assets/images/bg-2.jpg');
+        background-image: url('/assets/images/bg-3.jpg');
         background-size: cover;
         background-position-x: center;
         background-position-y: bottom;
@@ -25,7 +25,7 @@ body {
     }
 
     &.index::before {
-        background-image: url('/assets/images/bg-1.jpg');
+        background-image: url('/assets/images/bg-4.jpg');
         animation: fadeInBodyBg 3s ease-in-out .5s forwards
     }
 }
