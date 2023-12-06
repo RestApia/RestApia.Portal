@@ -20,12 +20,12 @@ price_annual_k: .85
     </div>
 
     <div class="payment-period">
-        <div class="period" data-target="price-monthly">Monthly</div>
+        <div class="period active" data-target="price-monthly">Monthly</div>
 
         {% assign discount = 1 | minus: page.price_annual_k %}
         {% assign discount = discount | times: 100 %}
         {% assign discount = discount | round: 0 %}
-        <div class="period active" data-target="price-annual">Annual (Save {{ discount }}%)</div>
+        <div class="period" data-target="price-annual">Annual (Save {{ discount }}%)</div>
     </div>
 
     <div class="plans">
@@ -36,12 +36,12 @@ price_annual_k: .85
                     target="_blank">help</a> someone today.</div>
 
             {% assign monthly_price = page.price_tier_0 | round: 2 %}
-            <div class="price price-monthly">{{ monthly_price }}</div>
+            <div class="price price-monthly show">{{ monthly_price }}</div>
 
             {% assign annual_price = page.price_tier_0 | times: page.price_annual_k %}
             {% assign annual_price = annual_price | times: 12 %}
             {% assign annual_price = annual_price | round: 2 %}
-            <div class="price price-annual show">
+            <div class="price price-annual">
                 {{ annual_price }}
             </div>
 
@@ -65,12 +65,12 @@ price_annual_k: .85
                     card</span> and want to be clear from Licenses perspective.</div>
 
             {% assign monthly_price = page.price_tier_1 | round: 2 %}
-            <div class="price price-monthly">{{ monthly_price }}</div>
+            <div class="price price-monthly show">{{ monthly_price }}</div>
 
             {% assign annual_price = page.price_tier_1 | times: page.price_annual_k %}
             {% assign annual_price = annual_price | times: 12 %}
             {% assign annual_price = annual_price | round: 2 %}
-            <div class="price price-annual show">
+            <div class="price price-annual">
                 {{ annual_price }}
             </div>
 
@@ -93,12 +93,12 @@ price_annual_k: .85
             <div class="description">All current features and all next features are included with this plan.</div>
 
             {% assign monthly_price = page.price_tier_2 | round: 2 %}
-            <div class="price price-monthly">{{ monthly_price }}</div>
+            <div class="price price-monthly show">{{ monthly_price }}</div>
 
             {% assign annual_price = page.price_tier_2 | times: page.price_annual_k %}
             {% assign annual_price = annual_price | times: 12 %}
             {% assign annual_price = annual_price | round: 2 %}
-            <div class="price price-annual show">
+            <div class="price price-annual">
                 {{ annual_price }}
             </div>
 
