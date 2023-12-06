@@ -29,10 +29,9 @@ title: "RestApia - Not Yet Ready page"
         document.querySelector('.question').innerHTML = src[random][0];
         document.querySelector('.secret').innerHTML = src[random][1];
 
-        var revealBtn = document.querySelector('.reveal-btn');
         var content = document.querySelector('.answer .content');
 
-        revealBtn.addEventListener("click", function () {
+        content.addEventListener("click", function () {
             content.classList.add('revealed');
         });
     });
