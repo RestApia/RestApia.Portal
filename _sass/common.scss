@@ -45,6 +45,16 @@ a {
     }
 }
 
+a.alternative {
+    color: var(--app-fg-color);
+    border: none;
+    text-decoration: underline;
+
+    &:hover {
+        color: var(--app-fg-alt);
+    }
+}
+
 a.btn {
     color: var(--app-fg-accent);
     text-decoration: none;
@@ -74,6 +84,12 @@ a.btn {
         box-shadow: none;
         pointer-events: none;
     }
+}
+
+.default-content {
+    max-width: calc(var(--app-max-width) + #{$contentMargin * 2});
+    margin: 0 auto;
+    height: 100%;
 }
 
 @keyframes fadeInBodyBg {

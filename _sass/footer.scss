@@ -9,6 +9,10 @@ footer {
     display: flex;
     justify-content: center;
 
+    &.dark {
+        background: #0b0716;
+    }
+
     .content {
         display: flex;
         justify-content: space-between;

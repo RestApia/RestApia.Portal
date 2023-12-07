@@ -1,8 +1,6 @@
 .layout-content {
-    max-width: calc(var(--app-max-width) + #{$contentMargin * 2});
-    margin: 0 auto;
-    height: 100%;
-
+    @extend .default-content;
+    
     background: rgba(0, 0, 0, 0.1);
     backdrop-filter: blur(5px);
 
