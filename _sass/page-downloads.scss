@@ -1,4 +1,4 @@
-$image-height: 563px;
+$image-height: 560px;
 $left-part-width: 540px;
 
 .page-downloads {
@@ -23,6 +23,8 @@ $left-part-width: 540px;
         background: linear-gradient(180deg, rgba(24, 20, 45, 0.9) 35.94%, rgba(39, 20, 45, 0) 100%);
         padding: 40px 0 70px 40px;
         width: 100%;
+        position: relative;
+        overflow-x: hidden;
 
         .left {
             width: 50%;
@@ -32,8 +34,26 @@ $left-part-width: 540px;
 
         .right {
             flex-grow: 1;
-            background: url(/assets/content/downloads/app-1.png) no-repeat left top;
+            // background: url(/assets/content/downloads/app-1.png) no-repeat left top;
             height: $image-height;
+
+            .image {
+                position: absolute;
+
+                img {
+                    max-width: none;
+                    max-height: none;
+                    border-radius: 10px;
+                    box-shadow: 0px 2px 4px #4D2460;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                    border-radius: 10px;
+                }
+            }
         }
 
         .description {
@@ -115,11 +135,41 @@ $left-part-width: 540px;
         width: 100%;
         background: #18142df0;
         box-shadow: #18142d8f 0 -8px 6px -3px;
+        position: relative;
+        overflow-x: hidden;
 
         .left {
             width: 50%;
             max-width: $left-part-width;
-            background: url(/assets/content/downloads/app-2.png) no-repeat right top;
+            position: relative;
+            height: $image-height;
+            // background: url(/assets/content/downloads/app-2.png) no-repeat right top;
+
+            // img {
+            //     position: absolute;
+            //     max-width: none;
+            //     max-height: none;
+            //     right: 0;
+            // }
+
+            .image {
+                position: absolute;
+                right: 0;
+
+                img {
+                    max-width: none;
+                    max-height: none;
+                    border-radius: 10px;
+                    box-shadow: 0px 2px 4px #1f0b29;
+                }
+
+                &::after {
+                    content: '';
+                    position: absolute;
+                    inset: 0;
+                    border-radius: 10px;
+                }
+            }
         }
 
         .right {
