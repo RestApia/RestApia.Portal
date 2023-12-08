@@ -5,75 +5,101 @@ footer_class: "dark"
 ---
 
 <div class="page-downloads">
-    <div class="downloads-area">
-        <article>
-            <div class="left">
-                <h1>Download RestApia - Desktop</h1>
-                <div class="description">Discover a new tool, where API testing aligns with the developer's workflow:
-                    code-inspired request editing, git-friendly collection management, and extensibility. Crafted for
-                    developers, this tool is a stepping stone to your comfortable work and productive investigations.
-                </div>
+  <div class="downloads-area">
+    <article>
+      <div class="left">
+        <h1>Download RestApia - Desktop</h1>
+        <div class="description">Discover a new tool, where API testing aligns with the developer's workflow:
+          code-inspired request editing, git-friendly collection management, and extensibility. Crafted for
+          developers, this tool is a stepping stone to your comfortable work and productive investigations.
+        </div>
 
-                <div class="version">
-                    <span>Latest version:</span>
-                    <span>0.3.0</span>
-                </div>
+        <div class="version">
+          <span>Latest version:</span>
+          <span>loading...</span>
+        </div>
 
-                <a href="#" class="download-btn">
-                    <img src="/assets/images/logo-2.svg" alt="">
-                    <span>Download for Windows 64-bit</span>
-                </a>
+        <a href="#" class="download-btn disabled">
+          <span class="loading">Loading...</span>
+          <img src="/assets/images/logo-2.svg" alt="">
+          <span class="download-btn-text">Download</span>
+        </a>
 
-                <div class="agreement">By downloading and using the RestApia Desktop tool, you are agreeing to our <a
-                        href="/not-ready">Privacy Policy</a> and <a href="/not-ready">Terms of Service</a>.</div>
+        <div class="agreement">By downloading and using the RestApia Desktop tool, you are agreeing to our <a href="/not-ready">Privacy Policy</a> and <a href="/not-ready">Terms of Service</a>.</div>
 
-                <hr />
+        <hr />
 
-                <div class="releases">
-                    <div>Looking for another OS? Download for Mac (<a href="/not-ready">Intel Chip</a>, <a
-                            href="/not-ready">Apple Chip</a> or Linux (<a href="/not-ready">x64</a>, <a
-                            href="/not-ready">arm64</a>).</div>
-                    <div>All available releases can be found on <a href="/not-ready">extensions GitHub page</a>.</div>
-                </div>
-            </div>
+        <div class="releases">
+          <!-- <div>Looking for another OS? Download for Mac (<a href="/not-ready">Intel Chip</a>, <a href="/not-ready">Apple Chip</a> or Linux (<a href="/not-ready">x64</a>, <a href="/not-ready">arm64</a>).</div> -->
+          <div>Looking for another OS? We're working on expanding RestApia's horizons to include both Linux and Mac systems in our future roadmap. Stay tuned for updates!</div>
+          <div>All available releases can be found on our <a href="https://github.com/RestApia/RestApia.Documentation/releases">Documentation GitHub page</a>.</div>
+        </div>
+      </div>
 
-            <div class="right">
-                <div class="image">
-                    <img src="/assets/content/downloads/app-1.png" alt="">
-                </div>
-            </div>
-        </article>
-    </div>
+      <div class="right">
+        <div class="image">
+          <img src="/assets/content/downloads/app-1.png" alt="">
+        </div>
+      </div>
+    </article>
+  </div>
 
-    <div class="faq-area">
-        <article>
-            <div class="left">
-                <div class="image">
-                    <img src="/assets/content/downloads/app-2.png" alt="">
-                </div>
-            </div>
-            <div class="right">
-                <h1>Frequently asked questions</h1>
+  <div class="faq-area">
+    <article>
+      <div class="left">
+        <div class="image">
+          <img src="/assets/content/downloads/app-2.png" alt="">
+        </div>
+      </div>
+      <div class="right">
+        <h1>Frequently asked questions</h1>
 
-                <div>
-                    <h2>What is RestApia - Desktop?</h2>
-                    <p>RestApia is a desktop application that allows you to create, edit, and manage your API requests and collections, and run them using the built-in collection runner. RestApia is built on Electron and is designed to run on Windows, Mac, and Linux operating systems.</p>
-                </div>
+        <div>
+          <h2>What is RestApia - Desktop?</h2>
+          <p>RestApia is a desktop application that allows you to create, edit, and manage your API requests and collections, and run them using the built-in collection runner. RestApia is built on Electron and is designed to run on Windows, Mac, and Linux operating systems.</p>
+        </div>
 
-                <div>
-                    <h2>What is the difference between RestApia and Postman?</h2>
-                    <p>RestApia offers a code-centric approach to request editing, git-friendly project management, and operates locally without the need for registration.</p>
-                </div>
+        <div>
+          <h2>What is the difference between RestApia and Postman?</h2>
+          <p>RestApia offers a code-centric approach to request editing, git-friendly project management, and operates locally without the need for registration.</p>
+        </div>
 
-                <div>
-                    <h2>Can I use it for my work, what should responsible person know about License?</h2>
-                    <p>RestApia is free for personal use. For professional or organizational use, the license is required, but a 30-day trial period is available for organization email registrations. <a href="/contacts">Contact us</a> about trial</p>
-                </div>
+        <div>
+          <h2>Can I use it for my work, what should responsible person know about License?</h2>
+          <p>RestApia is free for personal use. For professional or organizational use, the license is required, but a 30-day trial period is available for organization email registrations. <a href="/contacts">Contact us</a> about trial</p>
+        </div>
 
-                <div>
-                    <h2>I am a teacher at an educational institution. Is it possible to obtain free licenses?</h2>
-                    <p>For educational purposes, we happily provide free licenses. Please contact us using your '.edu' email address to proceed with the request.</p>
-                </div>
-        </article>
-    </div>
+        <div>
+          <h2>I am a teacher at an educational institution. Is it possible to obtain free licenses?</h2>
+          <p>For educational purposes, we happily provide free licenses. Please contact us using your '.edu' email address to proceed with the request.</p>
+        </div>
+    </article>
+  </div>
 </div>
+
+<script>
+  window.addEventListener('DOMContentLoaded', () => {
+    const userName = 'RestApia'
+    const repository = 'RestApia.Documentation'
+    fetch(`https://api.github.com/repos/${userName}/${repository}/releases/latest`)
+      .then(response => response.json())
+      .then(data => {
+        // console.log(data); // data contains the release information
+        const version = data.tag_name.trimStart('v');
+        const setupAsset = data
+          .assets
+          .find(asset => /RestApia-\d+\.\d+\.\d+-setup\.exe/.test(asset.name) || /RestApia-win-x64-\d+\.\d+\.\d+-setup\.exe/.test(asset.name));
+
+        const downloadUrl = setupAsset.browser_download_url;
+
+        const versionEl = document.querySelector('.page-downloads .version span:last-child');
+        versionEl.textContent = version;
+        
+        document.querySelector('.page-downloads .download-btn-text').textContent = 'Download for Windows 64-bit';
+        const downloadBtn = document.querySelector('.page-downloads .download-btn');
+        downloadBtn.href = downloadUrl;
+        downloadBtn.classList.remove('disabled');
+      })
+      .catch(error => console.error('Error fetching latest release:', error));
+  });
+</script>
