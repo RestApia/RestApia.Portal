@@ -98,6 +98,8 @@ footer_class: "dark"
         document.querySelector('.page-downloads .download-btn-text').textContent = 'Download for Windows 64-bit';
         const downloadBtn = document.querySelector('.page-downloads .download-btn');
         downloadBtn.href = downloadUrl;
+        downloadBtn.dataset.version = version;
+        downloadBtn.dataset.platform = "win-x64";
         downloadBtn.classList.remove('disabled');
       })
       .catch(error => console.error('Error fetching latest release:', error));
