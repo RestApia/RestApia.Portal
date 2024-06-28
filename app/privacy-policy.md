@@ -1,5 +1,7 @@
 ---
+layout: clear
 updateDate: "2024-06-28"
+contactsEmail: "support@restapia.app"
 ---
 
 ## Privacy Policy for RestApia
@@ -20,7 +22,7 @@ RestApia is the controller and responsible for your personal data.
 
 If you have any questions about this privacy policy or our privacy practices, please contact us at:
 
-- **Email:** support@restapia.app
+- **Email:** {{ page.contactsEmail }}
 
 #### 2. The Data We Collect About You
 
@@ -60,4 +62,4 @@ RestApia complies with relevant data protection laws and regulations. Since we d
 
 #### 9. Contact Information
 
-If you have any questions or concerns about this privacy policy, please contact us at support@restapia.app.
+If you have any questions or concerns about this privacy policy, please contact us at  {{ page.contactsEmail }}.
