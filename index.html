@@ -1,28 +1,41 @@
 ---
-layout: demo
+layout: welcome
 title: "RestApia - Desktop tool"
-demo_title: "Just Clean, Simple Code"
-bodyClass: index
 ---
 
-<div class="page-main">
-    <div class="screenshots">
-        {% for image in site.static_files %}
-            {% if image.path contains '/assets/content/demo/' %}
-                <img src="{{ site.baseurl }}{{ image.path }}" alt="" class="demo-picture{% if forloop.first %} show{% endif %}">
-            {% endif %}
-        {% endfor %}
+<div class="content">
+  <div class="left">
+    <div class="welcome-message">
+      <div>
+        <span>DO</span>
+        <span class="highlite">CLEAN</span>
+      </div>
+      <div>
+        <span class="highlite">SIMPLE</span>
+        <span>CODE</span>
+      </div>
     </div>
+    <div class="command">
+      <span>winget install</span>
+      <span class="highlite">RestApia</span>
+      <span class="copy-button" onclick="copyWingetCommand()">
+        <i class="ph-fill ph-copy default"></i>
+        <i class="ph ph-check hidden coppied"></i>
+      </span>
+    </div>
+  </div>
+  <div class="right">&nbsp;</div>
 </div>
 
 <script>
-    setInterval(function () {
-        var current = document.querySelector('.demo-picture.show');
-        var next = current.nextElementSibling;
-        if (next === null) {
-            next = document.querySelector('.demo-picture');
-        }
-        current.classList.remove('show');
-        next.classList.add('show');
-    }, 5000);
+  function copyWingetCommand() {
+    navigator.clipboard.writeText("winget install RestApia");
+    $(".copy-button .default").addClass("hidden");
+    $(".copy-button .coppied").removeClass("hidden");
+
+    setTimeout(() => {
+      $(".copy-button .default").removeClass("hidden");
+      $(".copy-button .coppied").addClass("hidden");
+    }, 2000);
+  }
 </script>

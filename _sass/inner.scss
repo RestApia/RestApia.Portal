@@ -1,0 +1,15 @@
+body.inner {
+  .bg {
+    // background-position: -125px -190px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--app-bg-second);
+  }
+
+  main {
+    padding: 45px 100px;
+  }
+}
