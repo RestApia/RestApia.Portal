@@ -1,18 +1,13 @@
-body,
-html {
-  --app-max-width: 1300px;
-  --app-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+html,
+body {
+  --app-bg-color: #212225;
+  --app-fg-color: #fff;
+  --app-fg-accent: #9461ff;
+  --app-fg-inactive: #ACACAC;
 
-  --app-bg-color: #1a141c;
-  --app-bg-alt: #231f25;
-  --app-bg-accent: #9461FF;
-
-  --app-fg-color: #fff; //#C9C9C9;
-  --app-fg-alt: #c1a4ff;
-  --app-fg-accent: #6C38D9;
-  --app-fg-silent: #606060;
-
-  --app-shadow-accent: #3D168E;
+  --left-menu-margin: 420px;
+  --app-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
+    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
   background: var(--app-bg-color);
   color: var(--app-fg-color);
@@ -21,22 +16,44 @@ html {
   padding: 0;
   margin: 0;
   height: 100vh;
-  min-width: 1000px;
   width: auto;
 
   box-sizing: border-box;
   z-index: 1;
+
+  & > .bg {
+    height: 100%;
+    background-image: url("/assets/images/polygons.png");
+    background-position: -125px -320px;
+    display: flex;
+    flex-direction: column;
+  }
 }
 
-h2 {
-  font-weight: 200;
-  margin-bottom: 5px;
+main {
+  flex-grow: 1;
 }
 
-p {
-  margin-bottom: 5px;
+.main-menu {
+  height: 95px;
+  display: flex;
+  align-items: center;
+  gap: 25px;
+
+  a {
+    color: #fff;
+    text-decoration: none;
+    border-bottom: #ffffff00 solid 1px;
+    opacity: 0.85;
+    transition: border-bottom-color 0.2s;
+
+    &:hover {
+      opacity: 1;
+      border-bottom-color: #ffffffff;
+    }
+  }
 }
 
-ul {
-  margin: 10px 0
+.hidden {
+  display: none;
 }

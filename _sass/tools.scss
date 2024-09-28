@@ -1,7 +1,0 @@
-@import "variables";
-
-@mixin when-mobile(){
-    @media (max-width: #{$bp-mobile - 1}) {
-        @content;
-    }
-}
