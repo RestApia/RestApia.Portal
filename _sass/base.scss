@@ -2,9 +2,16 @@ html,
 body {
   --app-bg-color: #212225;
   --app-bg-second: #26282b;
+  --app-bg-accent: #6c38d9;
+  --app-bg-accent-hover: #7c4be5;
+  --app-bg-action: #4D8A43;
+  --app-bg-action-hover: #65a95a;
   --app-fg-color: #fff;
   --app-fg-accent: #9461ff;
   --app-fg-inactive: #acacac;
+  --app-fg-action: #4D8A43;
+  --app-fg-action-hover: #87c47e;
+  --app-stroke: #ffffff1a;
 
   --left-menu-margin: 420px;
   --app-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
@@ -131,4 +138,24 @@ a {
       gap: 8px;
     }
   }
+}
+
+@mixin ph-icon {
+  display: inline-block;
+  font-family: "Phosphor" !important;
+  font-style: normal;
+  font-weight: normal;
+  font-variant: normal;
+  text-transform: none;
+  line-height: 1;
+  letter-spacing: 0;
+  -webkit-font-feature-settings: "liga";
+  -moz-font-feature-settings: "liga=1";
+  -moz-font-feature-settings: "liga";
+  -ms-font-feature-settings: "liga" 1;
+  font-feature-settings: "liga";
+  -webkit-font-variant-ligatures: discretionary-ligatures;
+  font-variant-ligatures: discretionary-ligatures;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
 }
