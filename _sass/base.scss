@@ -5,8 +5,8 @@ body {
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
   background: var(--app-bg-color);
-  color: var(--app-fg-color);
   font-family: var(--app-font);
+  color: #fff;
 
   padding: 0;
   margin: 0;
@@ -27,6 +27,7 @@ body {
 
 main {
   flex-grow: 1;
+  color: var(--app-fg-color);
 }
 
 header {
@@ -62,12 +63,24 @@ h2 {
 }
 
 a {
-  color: var(--app-fg-color);
   transition: color 0.2s;
 
   &:hover {
     color: var(--app-fg-accent);
   }
+}
+
+a,
+strong,
+h1,
+h2,
+h3,
+h4 {
+  color: #fff;
+}
+
+strong {
+  font-weight: 600;
 }
 
 .main-menu {

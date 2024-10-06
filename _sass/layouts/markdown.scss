@@ -2,6 +2,7 @@
   h2 {
     border-top: solid 1px var(--app-stroke);
     margin-top: 15px;
+    margin-bottom: 15px;
     padding-top: 10px;
     transition: color 0.2s;
 
@@ -32,6 +33,12 @@
 
   p {
     margin: 15px 0;
+  }
+
+  li > p {
+    margin: 0;
+    padding: 0;
+    display: inline;
   }
 
   em {
@@ -90,7 +97,7 @@
 
     li {
       padding: 2px 0;
-      
+
       &::before {
         @include ph-icon;
         content: "\E13A";

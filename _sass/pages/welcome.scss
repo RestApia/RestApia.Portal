@@ -7,6 +7,7 @@ body.welcome {
     display: flex;
     flex-direction: row;
     height: 100%;
+    color: #fff;
 
     & > .left {
       width: calc(var(--left-menu-margin) - 20px); // 20px for shadows
