@@ -109,6 +109,12 @@
     }
   }
 
+  img {
+    border: solid 2px var(--app-stroke);
+    border-radius: 5px;
+    box-shadow: 1px 1px 7px #00000066;
+  }
+
   .content {
     background: var(--app-bg-second);
     padding: 30px 40px;
