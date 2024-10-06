@@ -1,18 +1,5 @@
 html,
 body {
-  --app-bg-color: #212225;
-  --app-bg-second: #26282b;
-  --app-bg-accent: #6c38d9;
-  --app-bg-accent-hover: #7c4be5;
-  --app-bg-action: #4D8A43;
-  --app-bg-action-hover: #65a95a;
-  --app-fg-color: #fff;
-  --app-fg-accent: #9461ff;
-  --app-fg-inactive: #acacac;
-  --app-fg-action: #4D8A43;
-  --app-fg-action-hover: #87c47e;
-  --app-stroke: #ffffff1a;
-
   --left-menu-margin: 420px;
   --app-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
@@ -109,35 +96,6 @@ a {
 
 .hidden {
   display: none;
-}
-
-.blocks {
-  display: flex;
-  flex-direction: row;
-  gap: 60px;
-
-  .block {
-    background: var(--app-bg-second);
-    padding: 30px;
-    border-radius: 10px;
-    width: 550px;
-
-    h2 {
-      line-height: 1em;
-      margin: 0 0 20px 0;
-      padding: 0 0 15px 0;
-      border-bottom: solid 1px #ffffff15;
-    }
-
-    ul,
-    ol {
-      margin: 0;
-      padding: 0 0 0 20px;
-      display: flex;
-      flex-direction: column;
-      gap: 8px;
-    }
-  }
 }
 
 @mixin ph-icon {

@@ -1,9 +1,16 @@
 ---
 ---
 
+// base styles
 @import "reset";
 @import "base";
-@import "page-welcome";
-@import "page-prices";
-@import "inner";
-@import "markdown";
+@import "base.colors";
+@import "base.blocks";
+
+// layouts
+@import "layouts/inner";
+@import "layouts/markdown";
+
+// page specific styles
+@import "pages/welcome";
+@import "pages/prices";
