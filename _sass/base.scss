@@ -111,6 +111,10 @@ strong {
   display: none;
 }
 
+.fg-warning{
+  color: var(--app-fg-warning);
+}
+
 @mixin ph-icon {
   display: inline-block;
   font-family: "Phosphor" !important;
