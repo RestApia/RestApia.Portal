@@ -1,6 +1,6 @@
 ---
 layout: md
-title: "Extensions"
+title: "Support"
 ---
 
 # Support
