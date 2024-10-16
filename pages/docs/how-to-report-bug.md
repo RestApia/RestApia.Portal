@@ -10,7 +10,7 @@ If you've encountered an issue or bug while using **RestApia**, we greatly appre
 ## Steps to Report a Bug
 
 1. **Go to the GitHub Issues Page**  
-   Navigate to our [GitHub Issues page](https://github.com/RestApia/RestApia.Documentation/issues).
+   Navigate to our [GitHub Issues page](https://github.com/RestApia/RestApia.Community/issues).
 
 2. **Check for Existing Issues**  
    Before creating a new issue, take a moment to search through the existing issues to see if your bug has already been reported. If it has, feel free to add any additional information in the comments to help us resolve the issue faster.

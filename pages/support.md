@@ -9,7 +9,7 @@ We’re here to help! Whether you’ve encountered a bug, have a feature request
 
 ## Reporting Bugs and Feature Requests
 
-All users can easily report bugs or send us feature requests via GitHub. We encourage you to visit our [GitHub Issues page](https://github.com/RestApia/RestApia.Documentation/issues) where you can:
+All users can easily report bugs or send us feature requests via GitHub. We encourage you to visit our [GitHub Issues page](https://github.com/RestApia/RestApia.Community/issues) where you can:
 
 - **Report a Bug**: Found an issue? Let us know by submitting a bug report. Check out our [How to Report a Bug](/pages/docs/how-to-report-bug) guide for step-by-step instructions.
 - **Submit a Feature Request**: Have a great idea to make RestApia even better? Share it with us! Visit the [Sending Feature Requests](/pages/docs/how-to-request-feature) page to learn how to submit your ideas.

@@ -14,6 +14,6 @@ Thank you for your interest in this section of **RestApia**. This page is still 
 
 We’re constantly improving and expanding **RestApia** to offer the best experience possible. Check back soon for updates!
 
-In the meantime, feel free to explore the rest of our [Documentation](/pages/docs), join the discussion on our [Discord Community](https://discord.gg/FZuQyEpYM4), or visit our [GitHub Issues page](https://github.com/RestApia/RestApia.Documentation/issues) to submit feature requests and bug reports.
+In the meantime, feel free to explore the rest of our [Documentation](/pages/docs), join the discussion on our [Discord Community](https://discord.gg/FZuQyEpYM4), or visit our [GitHub Issues page](https://github.com/RestApia/RestApia.Community/issues) to submit feature requests and bug reports.
 
 We appreciate your patience and are excited to share what's coming next!

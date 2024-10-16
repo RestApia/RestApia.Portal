@@ -10,7 +10,7 @@ Do you have a brilliant idea or a feature you'd love to see in **RestApia**? Weâ
 ## Steps to Submit a Feature Request
 
 1. **Go to the GitHub Issues Page**  
-   Navigate to our [GitHub Issues page](https://github.com/RestApia/RestApia.Documentation/issues).
+   Navigate to our [GitHub Issues page](https://github.com/RestApia/RestApia.Community/issues).
 
 2. **Check for Existing Requests**  
    Before submitting a new feature request, take a moment to check if someone has already suggested a similar idea. If they have, feel free to add your thoughts or suggestions in the comments.
