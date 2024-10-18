@@ -35,7 +35,7 @@ Once extension support is available, users will be able to manage extensions dir
 
 ## Stay Tuned for Updates
 
-While we don’t have an exact release date for extensions, this is one of our top priorities for future updates. Keep an eye on our [roadmap](https://github.com/RestApia/RestApia.Community/issues/1) for more details, or join our [Discord Community](https://discord.gg/FZuQyEpYM4) to stay in the loop!
+Extensions are currently in beta, and while the documentation is still in progress, you can explore examples and find inspiration in our [GitHub repository](https://github.com/RestApia/RestApia.Shared/tree/main/src/Extensions). For more updates, feel free to join our [Discord Community](https://discord.gg/FZuQyEpYM4)!
 
 ---
 
