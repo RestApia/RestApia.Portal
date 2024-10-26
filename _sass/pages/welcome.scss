@@ -18,7 +18,8 @@ body.welcome {
     }
 
     & > .right {
-      background-image: url(/assets/images/welcome-app.png), url(/assets/images/welcome-wide-screen.png);
+      background-image: url(/assets/images/welcome-app.png),
+        url(/assets/images/welcome-wide-screen.png);
       background-position: left top, 2300px center;
       background-repeat: no-repeat;
       flex-grow: 1;
@@ -47,6 +48,25 @@ body.welcome {
 
     &:hover {
       background: #1c1c1c;
+    }
+  }
+
+  .other-platforms {
+    text-align: right;
+    padding-right: 15px;
+    margin-top: 6px;
+    font-size: 0.9em;
+
+    a {
+      color: var(--app-fg-inactive);
+      text-decoration: none;
+      border-bottom: solid 1px var(--app-stroke);
+      transition: border-color 0.2s;
+
+      &:hover {
+        color: var(--app-fg-color);
+        border-bottom: solid 1px var(--app-fg-accent-hover);
+      }
     }
   }
 
