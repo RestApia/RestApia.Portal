@@ -38,7 +38,8 @@ Once you have RestApia installed, you can dive straight into creating and managi
 
 ## Need Help?
 
-If you encounter any issues during installation or have questions about setting up RestApia, feel free to check our [Documentation](/pages/docs) or join our [Discord Community](https://discord.gg/FZuQyEpYM4) for real-time assistance.
+- If you encounter any issues or have questions about setting up, feel free to check our [Documentation](/pages/docs) or join our [Discord Community](https://discord.gg/FZuQyEpYM4).
+- [Looking for other platform?](/pages/docs/cross-platform)
 
 ---
 

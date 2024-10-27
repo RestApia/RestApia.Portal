@@ -98,6 +98,10 @@
           &.seats::before {
             content: "\ec38";
           }
+
+          &.warn::before {
+            content: "\E4E2";
+          }
         }
       }
     }
