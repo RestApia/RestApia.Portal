@@ -1,6 +1,7 @@
 html,
 body {
   --left-menu-margin: 420px;
+  --max--content-width: 1360px;
   --app-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
     sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
 
@@ -83,22 +84,98 @@ strong {
   font-weight: 600;
 }
 
-.main-menu {
-  height: 95px;
+.header-menu {
+  display: flex;
+  flex-direction: row;
+
+  .filler {
+    flex-grow: 1;
+  }
+
+  .main {
+    height: 95px;
+    display: flex;
+    align-items: center;
+    gap: 25px;
+
+    a {
+      color: #fff;
+      text-decoration: none;
+      border-bottom: #ffffff00 solid 1px;
+      opacity: 0.85;
+      transition: border-bottom-color 0.2s;
+
+      &:hover {
+        opacity: 1;
+        border-bottom-color: #ffffffff;
+      }
+    }
+  }
+
+  .account {
+    display: flex;
+    flex-direction: row;
+    justify-content: end;
+    align-items: center;
+    gap: 10px;
+    padding-right: 20px;
+
+    a {
+      text-decoration: none;
+      pointer-events: none;
+      color: var(--app-fg-inactive);
+      opacity: 40%;
+    }
+  }
+}
+
+footer {
+  background: var(--app-bg-second);
   display: flex;
   align-items: center;
-  gap: 25px;
+  justify-content: center;
+  font-size: 0.9em;
+  color: var(--app-fg-inactive);
+  padding: 5px 20px 4px;
 
-  a {
-    color: #fff;
-    text-decoration: none;
-    border-bottom: #ffffff00 solid 1px;
-    opacity: 0.85;
-    transition: border-bottom-color 0.2s;
+  & > div {
+    flex-grow: 1;
+    display: flex;
+    align-items: center;
+    justify-content: end;
+    max-width: var(--max--content-width);
+  }
 
-    &:hover {
-      opacity: 1;
-      border-bottom-color: #ffffffff;
+  .filler {
+    flex-grow: 1;
+  }
+
+  .left {
+    font-size: 0.9em;
+  }
+
+  .social-links {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+
+    a {
+      text-decoration: none;
+      font-size: 0.9em;
+      display: flex;
+      line-height: 0;
+      align-items: center;
+      justify-content: center;
+      gap: 5px;
+      color: var(--app-fg-inactive);
+
+      i.ph {
+        margin-bottom: -2px;
+      }
+
+      &:hover {
+        color: var(--app-fg-accent);
+      }
     }
   }
 }
@@ -111,7 +188,7 @@ strong {
   display: none;
 }
 
-.fg-warning{
+.fg-warning {
   color: var(--app-fg-warning);
 }
 
