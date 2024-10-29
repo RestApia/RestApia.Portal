@@ -1,0 +1,206 @@
+body.inner main.documentation {
+  // reset
+  margin: 0;
+  max-width: none;
+  min-width: 0;
+  padding: 20px 0;
+  display: flex;
+  flex-direction: row;
+
+  nav.menu {
+    width: 350px;
+    min-width: 350px;
+    padding: 16px 35px;
+    padding-right: 0;
+    border-right: 1px solid var(--app-stroke);
+    background-color: rgba(33, 34, 37, 0.7);
+    overflow: visible;
+    font-size: 0.875rem;
+
+    & > div {
+      position: sticky;
+      top: 30px;
+      overflow: auto;
+      max-height: 100vh;
+      padding-bottom: 50px;
+      padding-right: 35px;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+      margin-bottom: 25px;
+
+      li:nth-child(1) {
+        color: var(--app-fg-active);
+        padding-bottom: 10px;
+      }
+
+      li a {
+        display: block;
+        text-decoration: none;
+        color: var(--app-fg-inactive);
+        margin-left: 10px;
+        padding: 7px 0 7px 13px;
+        border-left: solid 1px var(--app-stroke);
+
+        transition: color 0.2s ease, border-left-color 0.2s ease,
+          background-color 0.2s ease;
+
+        &.active {
+          border-left: solid 1px var(--app-fg-accent);
+          color: var(--app-fg-active);
+          background: var(--app-bg-second);
+        }
+
+        &:hover {
+          color: var(--app-fg-active);
+        }
+      }
+    }
+  }
+
+  div.content {
+    flex: 1;
+    padding: 10px 60px;
+    line-height: 1.7rem;
+
+    max-width: 1080px;
+    min-width: 870px;
+    margin: 0 auto;
+
+    h1 {
+      margin-top: 10px;
+      margin-bottom: 18px;
+    }
+
+    h2 {
+      border-top: solid 1px var(--app-stroke);
+      margin: 35px 0 0px;
+      padding-top: 30px;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+      font-weight: 200;
+    }
+
+    ol {
+      padding-left: 20px;
+  
+      & > li {
+        margin-bottom: 10px;
+      }
+    }
+  
+    ul {
+      padding-left: 20px;
+      margin-top: 20px;
+      list-style-type: none;
+  
+      li {
+        padding: 2px 0 10px;
+        line-height: 1.4rem;
+  
+        &::before {
+          @include ph-icon;
+          content: "\E13A";
+          margin-right: 5px;
+          margin-left: -20px;
+          font-size: .7rem;
+          width: 1rem;
+          // color: var(--app-fg-accent);
+        }
+      }
+    }
+
+    img {
+      box-sizing: border-box;
+      border: 1px solid rgba(255, 255, 255, 0.07);
+      filter: drop-shadow(6px 10px 15px rgba(0, 0, 0, 0.25));
+      border-radius: 5px;
+    }
+
+    hr {
+      border: none;
+      border-top: 1px solid var(--app-stroke);
+    }
+
+    a {
+      color: var(--app-fg-accent);
+      text-decoration: none;
+
+      &.arrow::after {
+        @include ph-icon;
+        content: "\E06C";
+        position: absolute;
+        margin: 7px 0 0 5px;
+      }
+
+      &:hover {
+        color: var(--app-fg-accent-hover);
+      }
+    }
+
+    p {
+      margin: 20px 0;
+    }
+
+    em {
+      font-style: normal;
+      color: var(--app-fg-accent);
+    }
+
+    pre {
+      background: var(--app-bg-color);
+      padding: 12px 20px;
+      border-radius: 5px;
+      border: solid 1px var(--app-stroke);
+      margin: 7px 0;
+      position: relative;
+
+      .nb {
+        color: var(--app-fg-accent-hover);
+      }
+
+      .copy-button {
+        position: absolute;
+        right: 0;
+        top: 0;
+        background: transparent;
+        padding: 12px 12px 5px;
+        margin: 0;
+        color: var(--app-fg-inactive);
+        border: none;
+        cursor: pointer;
+
+        &:hover {
+          color: var(--app-fg-color);
+        }
+      }
+    }
+
+    *:not(pre) > code {
+      display: inline-block;
+      background: var(--app-bg-color);
+      border-radius: 5px;
+      border: solid 1px var(--app-stroke);
+      padding: 2px 8px;
+    }
+
+    .img-caption {
+      font-size: 0.8rem;
+      color: var(--app-fg-inactive);
+      line-height: 1.2rem;
+      text-align: center;
+      margin-top: 5px;
+      padding: 0 10px;
+
+      b {
+        font-weight: 400;
+        color: var(--app-fg-active);
+      }
+    }
+  }
+}

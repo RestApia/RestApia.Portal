@@ -13,6 +13,7 @@ body {
   margin: 0;
   height: 100vh;
   width: auto;
+  min-width: 1240px;
 
   box-sizing: border-box;
   z-index: 1;
@@ -190,6 +191,17 @@ footer {
 
 .fg-warning {
   color: var(--app-fg-warning);
+}
+
+.copy-button {
+  margin-top: 2px;
+  cursor: pointer;
+  color: var(--app-fg-inactive);
+
+  &:hover {
+    opacity: 1;
+    color: var(--app-fg-color);
+  }
 }
 
 @mixin ph-icon {

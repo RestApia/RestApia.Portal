@@ -1,0 +1,47 @@
+---
+layout: base
+bodyClass: inner
+---
+
+<header>
+  {% include logo.html %}
+  <div>{% include main-menu.html %}</div>
+</header>
+<main class="documentation">
+  <nav class="menu">
+    <div>
+      {% assign menu_path = page.menu | default: "_menu.html" %} {% include_relative {{ menu_path }} %}
+    </div>
+  </nav>
+  <div class="content">{{ content }}</div>
+</main>
+<footer>{% include footer.html %}</footer>
+
+<script>
+  document.addEventListener("DOMContentLoaded", function () {
+    document.querySelectorAll("pre code").forEach((block) => {
+      const preElement = block.parentNode;
+      const codeElement = block;
+
+      preElement.classList.add("copy-root");
+      codeElement.classList.add("copy-text");
+
+      block.parentNode.insertAdjacentHTML(
+        "beforeend",
+        '<span class="copy-button" onclick="copyWingetCommand()">' +
+          '<i class="ph-fill ph-copy default"></i>' +
+          '<i class="ph ph-check hidden coppied"></i>' +
+        '</span>'
+      );
+    });
+
+    const currentPath = window.location.pathname;
+    const menuItems = document.querySelectorAll(".documentation .menu ul li a");
+
+    menuItems.forEach(function (menuItem) {
+      if (menuItem.getAttribute("href") === currentPath) {
+        menuItem.classList.add("active");
+      }
+    });
+  });
+</script>

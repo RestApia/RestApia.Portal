@@ -69,15 +69,4 @@ body.welcome {
       }
     }
   }
-
-  .copy-button {
-    margin-top: 2px;
-    cursor: pointer;
-    color: var(--app-fg-inactive);
-
-    &:hover {
-      opacity: 1;
-      color: var(--app-fg-color);
-    }
-  }
 }

@@ -15,31 +15,19 @@ layout: welcome
       </div>
     </div>
     <div>
-      <div class="command">
+      <div class="command copy-root">
         <span>winget install</span>
         <span class="highlite">RestApia</span>
         <span class="copy-button" onclick="copyWingetCommand()">
           <i class="ph-fill ph-copy default"></i>
           <i class="ph ph-check hidden coppied"></i>
+          <div class="hidden copy-text">winget install RestApia</div>
         </span>
       </div>
       <div class="other-platforms">
-        <a href="/pages/docs/cross-platform">Looking for other platform?</a>
+        <a href="/pages/documentation/general-install">Looking for other platform?</a>
       </div>
     </div>
   </div>
   <div class="right">&nbsp;</div>
 </div>
-
-<script>
-  function copyWingetCommand() {
-    navigator.clipboard.writeText("winget install RestApia");
-    $(".copy-button .default").addClass("hidden");
-    $(".copy-button .coppied").removeClass("hidden");
-
-    setTimeout(() => {
-      $(".copy-button .default").removeClass("hidden");
-      $(".copy-button .coppied").addClass("hidden");
-    }, 2000);
-  }
-</script>

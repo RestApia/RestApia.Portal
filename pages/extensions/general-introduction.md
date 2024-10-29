@@ -1,9 +1,9 @@
 ---
-layout: md
+layout: documentation
 title: "Extensions"
 ---
 
-# Extensions
+# *RestApia* Extensions
 
 **RestApia** is continuously evolving, and we're excited to announce that **extension support** is planned for future updates! Extensions will enable users to expand the app’s functionality and tailor it to their specific needs.
 
@@ -22,7 +22,7 @@ We’re excited to see how you will use these powerful tools to enhance your API
 
 RestApia will support both **official extensions** and **user-developed extensions**:
 
-- **Official Extensions**: These will be maintained by the RestApia team and provide trusted, highly-requested features. 
+- **Official Extensions**: These will be maintained by the RestApia team and provide trusted, highly-requested features.
 - **User-Developed Extensions**: Users will be able to create and manage their own extensions. More details about the process for adding and managing user-developed extensions will be provided as we finalize the implementation.
 
 ## Managing Extensions

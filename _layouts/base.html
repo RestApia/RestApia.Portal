@@ -13,7 +13,7 @@
     })(window, document, 'script', 'dataLayer', 'GTM-MGFNZCFG');</script>
   <!-- End Google Tag Manager -->
 
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=1240, initial-scale=1">
   <meta charset="utf-8">
   <title>
     {% if page.title %}
@@ -38,6 +38,22 @@
   <div class="bg">
     {{ content }}
   </div>
+
+  <script>
+    function copyWingetCommand() {
+      // find  parent with class "copy-root"
+      const text = $(event.target).closest(".copy-root").find(".copy-text").text().trim();
+      navigator.clipboard.writeText(text);
+      
+      $(".copy-button .default").addClass("hidden");
+      $(".copy-button .coppied").removeClass("hidden");
+  
+      setTimeout(() => {
+        $(".copy-button .default").removeClass("hidden");
+        $(".copy-button .coppied").addClass("hidden");
+      }, 2000);
+    }
+  </script>
 </body>
 
 </html>

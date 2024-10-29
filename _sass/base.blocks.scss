@@ -32,3 +32,22 @@
     }
   }
 }
+
+.row {
+  display: flex;
+  flex-direction: row;
+  gap: 60px;
+
+  & > .col {
+    flex: 1;
+  }
+}
+
+.flex-h-center {
+  display: flex;
+  justify-content: center;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
