@@ -37,7 +37,7 @@ After creating a new request, you need to define the details of the request. Her
 {% endcapture %}
 {% include rapi-code.html title="Request example" code=code %}
 
-<a href="/documentation/not-yet-ready" class="arrow">Check out syntax documentation here</a>
+<a href="/pages/documentation/deep-dive-syntax" class="arrow">Check out syntax documentation here</a>
 
 ## Hit the Send Button
 
