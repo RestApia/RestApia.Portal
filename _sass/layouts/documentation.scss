@@ -88,29 +88,29 @@ body.inner main.documentation {
 
     ol {
       padding-left: 20px;
-  
+
       & > li {
         margin-bottom: 10px;
       }
     }
-  
+
     ul {
       padding-left: 20px;
       margin-top: 20px;
       list-style-type: none;
-  
-      li {
+
+      & > li {
         padding: 2px 0 10px;
         line-height: 1.4rem;
-  
+        position: relative;
+
         &::before {
           @include ph-icon;
+          position: absolute;
           content: "\E13A";
-          margin-right: 5px;
-          margin-left: -20px;
-          font-size: .7rem;
-          width: 1rem;
-          // color: var(--app-fg-accent);
+          left: -20px;
+          top: 8px;
+          font-size: 0.7rem;
         }
       }
     }
@@ -145,6 +145,12 @@ body.inner main.documentation {
 
     p {
       margin: 20px 0;
+    }
+
+    li p {
+      margin: 0;
+      padding: 0;
+      display: inline;
     }
 
     em {
