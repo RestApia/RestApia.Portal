@@ -106,6 +106,10 @@ strong {
       opacity: 0.85;
       transition: border-bottom-color 0.2s;
 
+      &.active {
+        border-bottom-color: #ffffffff;
+      }
+
       &:hover {
         opacity: 1;
         border-bottom-color: #ffffffff;

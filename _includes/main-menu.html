@@ -1,10 +1,10 @@
 <div class="header-menu">
   <div class="main">
-    <a href="/pages/features">Features</a>
-    <a href="/pages/documentation/general-introduction">Documentation</a>
-    <a href="/pages/extensions/general-introduction">Extensions</a>
-    <a href="/pages/support/support-introduction">Support</a>
-    <a href="/pages/pricing">Pricing</a>
+    <a href="/pages/features/code-driven" data-root="/pages/features">Features</a>
+    <a href="/pages/documentation/general-introduction" data-root="/pages/documentation">Documentation</a>
+    <a href="/pages/extensions/general-introduction" data-root="/pages/extensions">Extensions</a>
+    <a href="/pages/support/support-introduction" data-root="/pages/support">Support</a>
+    <a href="/pages/pricing" data-root="/pages/pricing">Pricing</a>
   </div>
 
   <!-- <div class="filler"></div>
@@ -14,3 +14,16 @@
     <a href="/pages/signup">Sign Up</a>
   </div> -->
 </div>
+
+<script>
+  // Add active class to the current menu item
+  var currentLocation = window.location.pathname;
+  var menuItems = document.querySelectorAll('.header-menu .main a');
+
+  menuItems.forEach(function(item) {
+    var root = item.getAttribute('data-root');
+    if (currentLocation === root || currentLocation.startsWith(root)) {
+      item.classList.add('active');
+    }
+  });
+</script>
