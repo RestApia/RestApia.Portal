@@ -88,7 +88,7 @@
 
           &::before {
             @include ph-icon;
-            content: "\e182";
+            content: '\e182';
 
             width: 1em;
             margin-right: 10px;
@@ -96,11 +96,11 @@
           }
 
           &.seats::before {
-            content: "\ec38";
+            content: '\ec38';
           }
 
           &.warn::before {
-            content: "\E4E2";
+            content: '\E4E2';
           }
         }
       }

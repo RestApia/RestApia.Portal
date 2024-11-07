@@ -13,14 +13,14 @@ You can create a new request in RestApia in two ways:
 
 <div class="row mt15">
   <div class="col">
-    <div><img src="/assets/images/documentation/first-request/pic-01.png"/></div>
+    <div><img alt="Add request context menu" src="/assets/images/documentation/first-request/pic-01.png"/></div>
     <div class="img-caption">
       <b>Via the Collection List</b>: Use the context menu in the collection list to create a new request. Right-click in the list, choose New Request, and you will be prompted to define your request details
     </div>
   </div>
 
   <div class="col">
-    <div><img src="/assets/images/documentation/first-request/pic-02.png"/></div>
+    <div><img alt="Add draft tab" src="/assets/images/documentation/first-request/pic-02.png"/></div>
     <div class="img-caption">
       <b>Via the Collection List</b>: Use the context menu in the collection list to create a new request. Right-click in the list, choose New Request, and you will be prompted to define your request details.
     </div>

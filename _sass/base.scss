@@ -2,8 +2,8 @@ html,
 body {
   --left-menu-margin: 420px;
   --max--content-width: 1360px;
-  --app-font: -apple-system, BlinkMacSystemFont, "Segoe UI", Helvetica, Arial,
-    sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+  --app-font: -apple-system, BlinkMacSystemFont, 'Segoe UI', Helvetica, Arial,
+    sans-serif, 'Apple Color Emoji', 'Segoe UI Emoji', 'Segoe UI Symbol';
 
   background: var(--app-bg-color);
   font-family: var(--app-font);
@@ -20,7 +20,7 @@ body {
 
   & > .bg {
     height: 100%;
-    background-image: url("/assets/images/polygons.png");
+    background-image: url('/assets/images/polygons.png');
     background-position: -125px -320px;
     display: flex;
     flex-direction: column;
@@ -185,7 +185,7 @@ footer {
   }
 }
 
-.highlite {
+.highlight {
   color: var(--app-fg-accent);
 }
 
@@ -210,18 +210,18 @@ footer {
 
 @mixin ph-icon {
   display: inline-block;
-  font-family: "Phosphor" !important;
+  font-family: 'Phosphor' !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
   text-transform: none;
   line-height: 1;
   letter-spacing: 0;
-  -webkit-font-feature-settings: "liga";
-  -moz-font-feature-settings: "liga=1";
-  -moz-font-feature-settings: "liga";
-  -ms-font-feature-settings: "liga" 1;
-  font-feature-settings: "liga";
+  -webkit-font-feature-settings: 'liga';
+  -moz-font-feature-settings: 'liga=1';
+  -moz-font-feature-settings: 'liga';
+  -ms-font-feature-settings: 'liga' 1;
+  font-feature-settings: 'liga';
   -webkit-font-variant-ligatures: discretionary-ligatures;
   font-variant-ligatures: discretionary-ligatures;
   -webkit-font-smoothing: antialiased;

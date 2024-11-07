@@ -45,7 +45,9 @@ body.inner main.documentation {
         padding: 7px 0 7px 13px;
         border-left: solid 1px var(--app-stroke);
 
-        transition: color 0.2s ease, border-left-color 0.2s ease,
+        transition:
+          color 0.2s ease,
+          border-left-color 0.2s ease,
           background-color 0.2s ease;
 
         &.active {
@@ -107,7 +109,7 @@ body.inner main.documentation {
         &::before {
           @include ph-icon;
           position: absolute;
-          content: "\E13A";
+          content: '\E13A';
           left: -20px;
           top: 8px;
           font-size: 0.7rem;
@@ -133,7 +135,7 @@ body.inner main.documentation {
 
       &.arrow::after {
         @include ph-icon;
-        content: "\E06C";
+        content: '\E06C';
         position: absolute;
         margin: 7px 0 0 5px;
       }

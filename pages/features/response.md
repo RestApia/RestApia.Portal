@@ -14,7 +14,6 @@ title: "Structured Responses"
 - **Available Variables**: See all available variables for the current request, allowing you to reuse and understand dynamic parts of your API calls.
 - **Timeline View**: Track every step of the request, including which endpoint was called, response length, type, status, and total execution time.
 
-
 ## Formatted Response example
 
 ![Structured Response Example](/assets/images/features/response-content.png)

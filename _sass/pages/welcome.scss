@@ -20,7 +20,9 @@ body.welcome {
     & > .right {
       background-image: url(/assets/images/welcome-app.png),
         url(/assets/images/welcome-wide-screen.png);
-      background-position: left top, 2300px center;
+      background-position:
+        left top,
+        2300px center;
       background-repeat: no-repeat;
       flex-grow: 1;
       // height: 860px;

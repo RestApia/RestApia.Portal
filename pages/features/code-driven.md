@@ -12,9 +12,11 @@ title: "Code-Driven Definition"
 RestApia allows you to define your API requests using a simple editor with built-in features like *syntax highlighting* and *text completion*.
 
 ### Request editor
+
 ![Editor](/assets/images/features/code-driven-1.png)
 
 ### Using Variables, Headers, and Cookies
+
 ![Value](/assets/images/features/values-in-code.png)
 
 ## Why Code-Driven Requests?

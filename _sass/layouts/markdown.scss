@@ -11,7 +11,7 @@
     }
 
     &::before {
-      content: "# ";
+      content: '# ';
       color: var(--app-fg-accent);
     }
   }
@@ -100,7 +100,7 @@
 
       &::before {
         @include ph-icon;
-        content: "\E13A";
+        content: '\E13A';
         margin-right: 5px;
         margin-left: -20px;
         width: 1em;
