@@ -1,0 +1,51 @@
+name: PR Validation for GitHub Pages
+
+on: 
+  pull_request:
+    branches: [ main ]
+  workflow_dispatch:  # Enables manual triggering of the workflow
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      # Step 1: Checkout Code
+      - name: Checkout Code
+        uses: actions/checkout@v2
+
+      # Step 2: Set up Node.js
+      - name: Set up Node.js
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'  # Specify the version you need
+
+      # Step 3: Install Node Dependencies
+      - name: Install Node Dependencies
+        run: npm ci
+
+      # Step 4: Run HTML Validation
+      - name: Run HTML Validation
+        run: ./node_modules/.bin/htmlhint "**/*.html"
+
+      # Step 5: Run Markdown Lint
+      - name: Run Markdown Lint
+        run: ./node_modules/.bin/markdownlint "pages/**/*.md"
+
+      # Step 6: Check SCSS Formatting with Prettier
+      - name: Check SCSS Formatting
+        run: ./node_modules/.bin/prettier --check "**/*.scss"
+
+      # Step 7: Spell Check with cspell
+      - name: Spell Check
+        run: ./node_modules/.bin/cspell '**/*' --no-progress
+
+      # Step 8: Setup GitHub Pages Environment
+      - name: Setup Pages
+        uses: actions/configure-pages@v3
+
+      # Step 9: Build Site with Jekyll
+      - name: Build with Jekyll
+        uses: actions/jekyll-build-pages@v1
+        with:
+          source: ./
+          destination: ./_site
