@@ -1,4 +1,4 @@
 ---
 layout: redirect
-target: "/pages/legal/privacy-policy"
+target: "/pages/support/legal-privacy-policy"
 ---
