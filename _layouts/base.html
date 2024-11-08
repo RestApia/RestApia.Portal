@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: " en-US" }}" class="cc--darkmode">
+
+<head>
+  <!-- Google Tag Manager -->
+  <script>(function (w, d, s, l, i) {
+      w[l] = w[l] || []; w[l].push({
+        'gtm.start':
+          new Date().getTime(), event: 'gtm.js'
+      }); var f = d.getElementsByTagName(s)[0],
+        j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : ''; j.async = true; j.src =
+          'https://www.googletagmanager.com/gtm.js?id=' + i + dl; f.parentNode.insertBefore(j, f);
+    })(window, document, 'script', 'dataLayer', 'GTM-MGFNZCFG');</script>
+  <!-- End Google Tag Manager -->
+
+  <meta name="viewport" content="width=1240, initial-scale=1">
+  <meta charset="utf-8">
+  <title>
+    {% if page.title %}
+      {{ page.title }} - {{ site.title }}
+    {% else %}
+      {{ site.title }}
+    {% endif %}
+  </title>
+  <link rel="stylesheet" href="/assets/css/main.css">
+  <link rel="icon" type="image/png" href="/favicon.png">
+
+  <script src="https://unpkg.com/@phosphor-icons/web"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+</head>
+
+<body class="{{page.bodyClass}} {{layout.bodyClass}}">
+  <!-- Google Tag Manager (noscript) -->
+  <noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-MGFNZCFG" height="0" width="0"
+      style="display:none;visibility:hidden"></iframe></noscript>
+  <!-- End Google Tag Manager (noscript) -->
+
+  <div class="bg">
+    {{ content }}
+  </div>
+
+  <script>
+    function copyWingetCommand() {
+      // find  parent with class "copy-root"
+      const text = $(event.target).closest(".copy-root").find(".copy-text").text().trim();
+      navigator.clipboard.writeText(text);
+      
+      $(".copy-button .default").addClass("hidden");
+      $(".copy-button .copied").removeClass("hidden");
+  
+      setTimeout(() => {
+        $(".copy-button .default").removeClass("hidden");
+        $(".copy-button .copied").addClass("hidden");
+      }, 2000);
+    }
+  </script>
+</body>
+
+</html>

@@ -1,0 +1,24 @@
+{
+    "version": "0.1",
+    "language": "en",
+    "words": [
+      "restapia",
+      "Winget",
+      "rapi",
+      "MGFNZCFG",
+      "mswin",
+      "zoneinfo",
+      "decompiling",
+      "CCPA",
+      "endcapture"
+    ],
+    "ignorePaths": [
+      "**/node_modules/**",
+      "**/dist/**",
+      "**/_site/**",
+      "**/*.css",
+      "package.json",
+      "**/*.ps1"
+    ]
+  }
+  

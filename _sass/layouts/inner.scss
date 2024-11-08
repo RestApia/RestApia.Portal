@@ -1,0 +1,18 @@
+body.inner {
+  .bg {
+    // background-position: -125px -190px;
+  }
+
+  header {
+    display: flex;
+    flex-direction: row;
+    background-color: var(--app-bg-second);
+  }
+
+  main {
+    padding: 45px 100px;
+    margin: 0 auto;
+    max-width: var(--max--content-width);
+    min-width: 1000px;
+  }
+}

@@ -1,0 +1,50 @@
+.code-rapi {
+  border: solid 1px var(--app-stroke);
+  border-radius: 18px;
+  overflow: hidden;
+  margin: 20px 0;
+  font-size: 0.875rem;
+
+  .header {
+    background-color: var(--app-bg-color);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0 20px;
+
+    .title {
+      padding: 7px 10px 5px;
+      border-bottom: solid 1px var(--app-fg-accent);
+      color: var(--app-fg-accent);
+    }
+
+    .copy-button {
+      font-size: 1.2rem;
+      margin-top: 8px;
+      color: var(--app-fg-muted);
+      transition: color 0.2s ease;
+
+      &:hover {
+        color: var(--app-fg-active);
+      }
+    }
+  }
+
+  .code {
+    background-color: var(--app-bg-second);
+    padding: 15px 20px 18px;
+    line-height: 1.3rem;
+
+    .comment {
+      color: #4d8a43;
+    }
+
+    .method {
+      color: #61ff3e;
+    }
+
+    .endpoint {
+      color: #ee9457;
+    }
+  }
+}

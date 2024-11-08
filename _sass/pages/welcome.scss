@@ -1,0 +1,74 @@
+body.welcome {
+  header {
+    padding-left: var(--left-menu-margin);
+  }
+
+  .content {
+    display: flex;
+    flex-direction: row;
+    height: 100%;
+    color: #fff;
+
+    & > .left {
+      width: calc(var(--left-menu-margin) - 20px); // 20px for shadows
+      display: flex;
+      flex-direction: column;
+      align-items: end;
+      gap: 20px;
+    }
+
+    & > .right {
+      background-image: url(/assets/images/welcome-app.png),
+        url(/assets/images/welcome-wide-screen.png);
+      background-position:
+        left top,
+        2300px center;
+      background-repeat: no-repeat;
+      flex-grow: 1;
+      // height: 860px;
+    }
+  }
+
+  .welcome-message {
+    font-size: 48px;
+    font-weight: 200;
+    line-height: 1.25em;
+    text-align: right;
+    padding: 10px 10px 0 0;
+  }
+
+  .command {
+    background: #171717;
+    border: #171717 solid 1px;
+    padding: 2px 10px 4px;
+    font-size: 20px;
+    font-weight: 200;
+    border-radius: 5px;
+    display: flex;
+    gap: 6px;
+    margin-right: 10px;
+
+    &:hover {
+      background: #1c1c1c;
+    }
+  }
+
+  .other-platforms {
+    text-align: right;
+    padding-right: 15px;
+    margin-top: 6px;
+    font-size: 0.9em;
+
+    a {
+      color: var(--app-fg-inactive);
+      text-decoration: none;
+      border-bottom: solid 1px var(--app-stroke);
+      transition: border-color 0.2s;
+
+      &:hover {
+        color: var(--app-fg-color);
+        border-bottom: solid 1px var(--app-fg-accent-hover);
+      }
+    }
+  }
+}
