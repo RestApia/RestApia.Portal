@@ -20,6 +20,9 @@ Tests are written inline in request definitions using the `!` prefix. They are e
 !json.id == "abc"
 !response.time.milliseconds < 500 // expect Fast response
 !response.length.kb > 3 // expect Sufficient payload size
+!content.includes('fact') // response contains 'fact'
+!headers['Content-Type'].includes('json') // response header contains 'json'
+!cookies['catfacts_session'] != null // cookie 'catfacts_session' is set
 ```
 
 ## Available Test Properties
@@ -42,6 +45,12 @@ Test commands in RestApia allow you to validate different aspects of API respons
 - `response.length.kb` → Response size in kilobytes.
 - `response.length.mb` → Response size in megabytes.
 
+## More objects for Testing
+
+- `content` → Response content as a String
+- `headers` → Dictionary of Response Headers
+- `cookies` → Dictionary of Cookies
+
 ## JSON Response Handling
 
 If the response contains JSON, the `json` object is automatically available for property validation.
@@ -50,6 +59,10 @@ If the response contains JSON, the `json` object is automatically available for 
 !json.name == "admin"  // valid user role
 !json.roles.contains("editor")  // roles array contains "editor"
 ```
+
+## Additinal testing functions
+
+- `log('your message here or object')` → Logs a message or object as test output.
 
 ## Custom Test Naming
 
