@@ -16,10 +16,10 @@ Tests are written inline in request definitions using the `!` prefix. They are e
 ### Example Test Usage
 
 ```plaintext
-!response.code == 200  // Validates HTTP status code
-!json.id == "abc"  // Validates JSON response property
-!response.time.milliseconds < 500; expect Fast response
-!response.length.kb > 3; expect Sufficient payload size
+!response.code == 200
+!json.id == "abc"
+!response.time.milliseconds < 500 // expect Fast response
+!response.length.kb > 3 // expect Sufficient payload size
 ```
 
 ## Available Test Properties
@@ -47,17 +47,17 @@ Test commands in RestApia allow you to validate different aspects of API respons
 If the response contains JSON, the `json` object is automatically available for property validation.
 
 ```plaintext
-!json.name == "admin"  // Validates user role
-!json.roles.contains("editor")  // Checks if roles array contains "editor"
+!json.name == "admin"  // valid user role
+!json.roles.contains("editor")  // roles array contains "editor"
 ```
 
 ## Custom Test Naming
 
-By default, test results display the original validation expression. You can provide custom test names using `; expect <description>`.
+By default, test results display the original validation expression. You can provide custom test names using comments in the same line with test `// expect <description>`.
 
 ```plaintext
-!response.code == 200; expect OK HTTP code
-!response.time.milliseconds < 500; expect Fast response
+!response.code == 200 // expect OK HTTP code
+!response.time.milliseconds < 500 // expect Fast response
 ```
 
 These descriptions appear in the **Tests** tab alongside pass/fail statuses.
